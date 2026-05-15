@@ -27,8 +27,7 @@ export default function Signup() {
 
     try {
       setLoading(true);
-
-      const res = await API.post("/user/signup", form);
+      await API.post("/user/signup", form);
 
       alert("Signup successful 🎉");
 
